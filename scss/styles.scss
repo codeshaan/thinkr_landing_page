@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+$orange-color: #fca461;
+$white-color: #fff;
+$dark-blue-color: #036669;
+
+@import "mediaqueries";
+@import "buttons";
+@import "showcase";

@@ -1,0 +1,17 @@
+.btn {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  outline: none;
+  letter-spacing: 2px;
+  transition: all 0.4s;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+.white-btn {
+  @extend .btn;
+  background: #fff;
+  color: #222;
+}
