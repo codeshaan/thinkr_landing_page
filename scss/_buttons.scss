@@ -1,17 +1,25 @@
 .btn {
-  padding: 1rem 2rem;
-  border: 2px solid #fff;
   border-radius: 2rem;
   outline: none;
+  font-size: 14px;
   letter-spacing: 2px;
   transition: all 0.4s;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
   display: block;
   cursor: pointer;
+  border: none;
+  padding: 10px 14px;
 }
 
 .white-btn {
   @extend .btn;
   background: #fff;
   color: #222;
+}
+
+.primary-btn {
+  @extend .btn;
+  background: $blue-color;
+  color: #fff;
 }

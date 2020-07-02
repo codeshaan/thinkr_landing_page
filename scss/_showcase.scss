@@ -27,7 +27,7 @@ nav {
     justify-content: space-around;
     list-style: none;
     width: 50%;
-    // margin-left: auto;
+    margin-left: auto;
 
     .close {
       display: none;
@@ -36,6 +36,9 @@ nav {
     li a {
       color: #fff;
       text-decoration: none;
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
     }
 
     @include mobile-l {
@@ -101,6 +104,7 @@ nav {
   h1 {
     font-size: 400%;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.124);
+
     span {
       color: $orange-color;
     }
@@ -118,5 +122,6 @@ nav {
     margin: 1rem auto;
     width: 70%;
     line-height: 30px;
+    font-weight: 300;
   }
 }
