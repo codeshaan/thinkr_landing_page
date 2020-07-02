@@ -8,6 +8,10 @@
   font-weight: 500;
   display: block;
   cursor: pointer;
+
+  @include tablet {
+    padding: 0.8rem 1.4rem;
+  }
 }
 
 .white-btn {

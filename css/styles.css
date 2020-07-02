@@ -17,6 +17,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .btn, .white-btn {
+    padding: 0.8rem 1.4rem;
+  }
+}
+
 .white-btn {
   background: #fff;
   color: #222;
@@ -54,6 +60,7 @@ nav ul {
   justify-content: space-around;
   list-style: none;
   width: 50%;
+  margin-left: auto;
 }
 
 nav ul .close {
@@ -63,21 +70,6 @@ nav ul .close {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-}
-
-@media screen and (max-width: 425px) {
-  nav ul {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: -50%;
-    transition: all 0.4s;
-    height: 100%;
-    background: #000f10;
-    text-align: center;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -92,6 +84,45 @@ nav ul li a {
     text-align: center;
     flex-direction: column;
     justify-content: flex-start;
+    width: 30%;
+    right: -50%;
+  }
+  nav ul .close {
+    display: block;
+    font-size: 2rem;
+  }
+  nav ul li {
+    display: block;
+    padding: 1rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-left: 4px solid #011e1f;
+  }
+  nav ul li:hover {
+    background: #011e1f;
+  }
+  nav ul li:nth-child(1) {
+    margin-top: 4rem;
+  }
+  nav ul.active-menu {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    transition: all 0.4s;
+    height: 100%;
+    background: #000f10;
+    width: 30%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    right: -100%;
   }
   nav ul .close {
     display: block;
