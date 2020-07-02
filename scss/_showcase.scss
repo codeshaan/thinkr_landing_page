@@ -27,7 +27,7 @@ nav {
     justify-content: space-around;
     list-style: none;
     width: 50%;
-    margin-left: auto;
+    // margin-left: auto;
 
     .close {
       display: none;
@@ -38,8 +38,21 @@ nav {
       text-decoration: none;
     }
 
+    @include mobile-l {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: -50%;
+      transition: all 0.4s;
+      height: 100%;
+      background: darken($dark-blue-color, 18%);
+      text-align: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     @include tablet {
-      position: absolute;
+      position: fixed;
       top: 0;
       right: -50%;
       transition: all 0.4s;
@@ -60,6 +73,7 @@ nav {
         padding: 1rem;
         transition: all 0.4s;
         cursor: pointer;
+        border-left: 4px solid darken($dark-blue-color, 15%);
 
         &:hover {
           background: darken($dark-blue-color, 15%);
@@ -90,10 +104,19 @@ nav {
     span {
       color: $orange-color;
     }
+
+    @include tablet {
+      font-size: 300%;
+    }
+
+    @include mobile-l {
+      font-size: 200%;
+    }
   }
 
   .showcase-text {
     margin: 1rem auto;
     width: 70%;
+    line-height: 30px;
   }
 }
