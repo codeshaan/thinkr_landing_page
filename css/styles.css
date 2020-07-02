@@ -19,6 +19,8 @@ p {
   font-weight: 300;
   font-family: "Raleway", sans-serif;
   display: block;
+  border: none;
+  padding: 10px 14px;
   cursor: pointer;
 }
 
